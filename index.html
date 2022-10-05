@@ -8,36 +8,17 @@
 </head>
 <body>
     <script>
-
-            class Movie{
-                     constructor(title,studio,rating){
-                        this.title = title;
-                        this.studio = studio;
-                        this.rating= rating;
-                        if(rating==null){
-                           return this.rating="PG"
-                        }else{
-                            return this.rating=rating
-                     }
-                    }
-                     getPG(arr){
-                           var Result=arr.filter((element)=>element.rating=="PG")
-                           return Result
-                     }
-                    }
-                
-                  var Movie1=new Movie("Casino Royal","Eon Productions","PG13")
-                  var Movie2=new Movie("Casino Royal 2","Eon Productions")
-
-                  var film1=new Movie("Die Another Day","Eon Productions","PG13")
-                  var film2=new Movie("Tomorrow Never Dies","Eon Productions")
-                  var film3=new Movie("Spectre","Eon Productions","PG13")
-                  var film4=new Movie("No Time To Die","Eon Productions")
-
-                  var arr=[film1,film2,film3,film4]
-                  console.log(Movie2.getPG(arr))
-                
+        class person{
+            constructor(name,age,locality,height,colour){
+                     this.name=name
+                     this.age=age
+                     this.locality=locality
+                     this.height=height
+                     this.colour=colour
+        }
+        }
+         var person1Bot=new person("Bot",25,"India","6","Black")
+         console.log(person1Bot)
     </script>
 </body>
-
 </html>
